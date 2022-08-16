@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gh-pr-creator"
+version = "0.0.1"
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+]
+
+[tool.setuptools.packages.find]
+include = ["gh_pr_creator"]
+
+[project.scripts]
+gh-pr-creator = "gh_pr_creator:main"
